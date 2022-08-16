@@ -1,0 +1,31 @@
+<html style="font-size: 16px;" lang="de">
+  {%- assign category = "blog" -%}
+  {% include head.html %}
+  <body class="u-body u-xl-mode" data-lang="de">
+    {% include header.html %}
+    <section class="u-clearfix u-section-1" id="sec-df82">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div class="u-blog u-expanded-width u-repeater u-repeater-1">
+          {% for post in site.posts %}
+            <div class="u-blog-post u-container-style u-repeater-item u-video-cover u-white">
+              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-2">
+                <h4 class="u-blog-control u-text u-text-3">
+                  <a class="u-post-header-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                </h4>
+                <a class="u-post-header-link" href="{{ post.url | prepend: site.baseurl }}">
+                  <img alt="" class="u-blog-control u-expanded-width u-image u-image-default u-image-2" src="{{ post.image_data | prepend: site.baseurl }}"/>
+                </a>
+                <div class="u-blog-control u-post-content u-text u-text-4 fr-view">{{ post.text }}</div>
+                <a href="{{ post.url | prepend: site.baseurl }}" class="u-blog-control u-border-2 u-border-palette-1-base u-btn u-btn-rectangle u-button-style u-none u-btn-2">
+                  Read More
+                </a>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+    {% include footer.html %}
+    {% include origin_footer.html %}
+  </body>
+</html>
