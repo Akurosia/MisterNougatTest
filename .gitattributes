@@ -1,0 +1,24 @@
+# Set the default behavior for all files.
+* text=auto
+
+# Convert to CRLF line endings on checkout.
+*.sln text eol=crlf
+*.sh text eol=crlf
+
+# Binary files.
+*.class         binary
+*.jar           binary
+*.gif           binary
+*.jpg           binary
+*.png           binary
+*.xlsx          binary
+
+# Text files.
+*.css           text
+*.html          text
+*.java          text
+*.js            text
+*.json          text
+*.properties    text
+*.txt           text
+*.xml           text
