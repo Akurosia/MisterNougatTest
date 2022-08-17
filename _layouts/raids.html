@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html style="font-size: 16px;" lang="de">
   {%- assign category = "raids" -%}
-  {% include head.html %}
+  {%- include head.html -%}
   <body class="u-body u-xl-mode" data-lang="de">
-    {% include header.html %}
+    {%- include header.html -%}
     <section class="u-clearfix u-palette-5-dark-3 u-section-1" id="carousel_8329">
       <div class="u-expanded-width u-shape u-shape-rectangle u-white u-shape-1"></div>
-      <img class="u-image u-image-contain u-image-round u-radius-50 u-image-1" data-image-width="1920" data-image-height="1080" src="{{ '/assets/images/final_fantasy_14_endwalker_art_cropped.jpg' | prepend: site.baseurl }}"/>
+      <img class="u-image u-image-contain u-image-round u-radius-50 u-image-raid" data-image-width="1920" data-image-height="1080" src="{{ '/assets/images/final_fantasy_14_endwalker_art_cropped.jpg' | prepend: site.baseurl }}"/>
       <div class="u-align-left u-container-style u-group u-radius-20 u-shape-round u-white u-group-1">
         <div class="u-container-layout u-container-layout-1">
           <h3 class="u-text u-text-1">Alle Raids inkl. Guides</h3>
@@ -70,7 +70,7 @@
         </div>
       </div>
     </section>
-    {% include footer.html %}
-    {% include origin_footer.html %}
+    {%- include footer.html -%}
+    {%- include origin_footer.html -%}
   </body>
 </html>

@@ -1,13 +1,13 @@
 <html style="font-size: 16px;" lang="de">
   {%- assign category = "post" -%}
-  {% include head.html %}
+  {%- include head.html -%}
   <body class="u-body u-xl-mode" data-lang="de">
-    {% include header.html %}
+    {%- include header.html -%}
     <section class="u-align-center u-clearfix u-section-1" id="sec-5c34">
-      <div class="u-clearfix u-sheet u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1">
-        <div class="u-container-style u-expanded-width u-post-details u-post-details-1">
-          <div class="u-container-layout u-valign-middle u-container-layout-1">
-            <img alt="" class="u-blog-control u-expanded-width u-image u-image-default u-image-1" src="{{ page.image_data | prepend: site.baseurl }}"/>
+      <div class="u-clearfix u-sheet u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet">
+        <div class="u-container-style u-expanded-width u-post-details ">
+          <div class="u-container-layout u-valign-middle">
+            <img alt="" class="u-blog-control u-expanded-width u-image u-image-default u-image-post" src="{{ page.image_data | prepend: site.baseurl }}"/>
             <h2 class="u-blog-control u-text u-text-1">{{page.title}}</h2>
             <div class="u-blog-control u-metadata u-metadata-1">
               <span class="u-meta-date u-meta-icon">{{page.date}}</span>
@@ -17,7 +17,7 @@
         </div>
       </div>
     </section>
-    {% include footer.html %}
-    {% include origin_footer.html %}
+    {%- include footer.html -%}
+    {%- include origin_footer.html -%}
   </body>
 </html>
