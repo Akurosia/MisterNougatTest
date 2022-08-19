@@ -3,7 +3,7 @@
   {%- assign category = "startseite" -%}
   {%- include head.html -%}
   <body data-home-page="index.html" data-home-page-title="Startseite" class="u-body u-xl-mode" data-lang="de">
-    {%- include header.html -%}
+    {%- include_cached  header.html -%}
     <section class="u-clearfix u-grey-30 u-section-1" id="sec-7f8e">
       <div class="u-clearfix u-sheet">
         <h1 class="u-text u-text-header">☆Updates☆</h1>
@@ -95,8 +95,8 @@
         </div>
       </div>
     </section>
-    {%- include footer.html -%}
-    {%- include origin_footer.html -%}
+    {%- include_cached  footer.html -%}
+    {%- include_cached  origin_footer.html -%}
     </section>
   </body>
 </html>
