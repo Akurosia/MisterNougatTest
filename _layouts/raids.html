@@ -69,6 +69,10 @@
           </a>
         </div>
       </div>
+
+      {%- for post in site.categories.ew -%}
+          <div class="u-align-center u-container-style u-list-item">{{post.title.de}}</div>
+      {%- endfor -%}
     </section>
     {%- include footer.html -%}
     {%- include origin_footer.html -%}
