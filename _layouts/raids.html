@@ -54,9 +54,12 @@
         </div>
       </div>
 
-      {%- for post in site.categories.ew -%}
-          <div class="u-align-center u-container-style u-list-item">{{post.title.de}}</div>
+      {%- for post in site.posts -%}
+        {%- if post.page_type == "guide" -%}
+          <div class="u-align-center u-container-style u-list-item">{{post.title.de}} ({{post.difficulty}})</div>
+        {%- endif -%}
       {%- endfor -%}
+
     </section>
     {%- include_cached  footer.html -%}
     {%- include_cached  origin_footer.html -%}
