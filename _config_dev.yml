@@ -1,0 +1,10 @@
+exclude:
+    - _posts/ffxiv_content/arr_new
+    - _posts/ffxiv_content/hw_new
+    - _posts/ffxiv_content/sb_new
+    - _posts/ffxiv_content/shb_new
+    - _posts/ffxiv_content/ew_new/alianzraud
+    - _posts/ffxiv_content/ew_new/dungeon
+    - _posts/ffxiv_content/ew_new/pvp
+    - _posts/ffxiv_content/ew_new/treasure
+    - _posts/ffxiv_content/ew_new/trial

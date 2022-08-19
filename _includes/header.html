@@ -40,21 +40,13 @@
                 <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{{ '/raids/' | prepend: site.baseurl }}" style="padding: 10px 20px;">Raids</a>
                 <div class="u-nav-popup">
                   <ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-2">
-                    <li class="u-nav-item">
-                      <a class="u-button-style u-nav-link u-white">A Realm Reborn</a>
-                    </li>
-                    <li class="u-nav-item">
-                      <a class="u-button-style u-nav-link u-white">Heavensward</a>
-                    </li>
-                    <li class="u-nav-item">
-                      <a class="u-button-style u-nav-link u-white">Stormblood</a>
-                    </li>
-                    <li class="u-nav-item">
-                      <a class="u-button-style u-nav-link u-white">Shadowbringer</a>
-                    </li>
-                    <li class="u-nav-item">
-                      <a class="u-button-style u-nav-link u-white">Endwalker</a>
-                    </li>
+                    {%- for post in site.categories.expansions -%}
+                      {%- for expac in post.expansions -%}
+                        <li class="u-nav-item">
+                          <a class="u-button-style u-nav-link u-white">{{ expac.name }}</a>
+                        </li>
+                      {%- endfor -%}
+                    {%- endfor -%}
                   </ul>
                 </div>
               </li>
