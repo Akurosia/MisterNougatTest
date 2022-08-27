@@ -19,6 +19,7 @@ description: > # this means to ignore newlines until "baseurl:"
   A page for Mister_Nougat_TTV
 encoding: utf-8
 repository: akurosia/MisterNougatTest
+imageurl: "https://ffxiv.akurosia.de/extras/images/ui/icon"
 baseurl: ""
 github_username:  akurosia
 # Build settings
@@ -32,6 +33,8 @@ plugins:
   - jekyll-sitemap
   - jekyll-commonmark
   - jekyll-include-cache
+gem:
+  - jekyll-roman
 include:
   - _pages
 permalink: /:categories/:slug.html

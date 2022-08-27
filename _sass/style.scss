@@ -9,6 +9,7 @@
         font-weight: 900;
         text-align: center;
     }
+
     .u-text-1 {
         margin: 30px 136px 0 0;
         margin-top: 20px;
@@ -107,6 +108,7 @@
         background-image: none;
     }
 }
+
 .u-section-2 {
     background-image: none;
     .u-sheet {
@@ -173,6 +175,7 @@
         right: 0;
     }
 }
+
 .u-section-3 {
     .u-sheet {
         min-height: 495px;
@@ -206,4 +209,19 @@
     .u-text {
         margin: 20px 0 0;
     }
+}
+
+.u-nav-item {
+    font-size: 1rem;
+    letter-spacing: 0px;
+    font-weight: 700;
+}
+
+.u-header .u-menu-1 {
+    margin: -36px 0px 0px auto !important;
+}
+
+.u-section-row{
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
