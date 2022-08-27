@@ -56,7 +56,10 @@
 
       {%- for post in site.posts -%}
         {%- if post.page_type == "guide" -%}
-          <div class="u-align-center u-container-style u-list-item">{{post.title.de}} ({{post.difficulty}})</div>
+        <div class="u-align-center u-container-style u-list-item">
+          <a href="{{ post.url | prepend: site.baseurl }}" target="_blank">{{post.title.de}} ({{post.difficulty}})</a>
+
+          </div>
         {%- endif -%}
       {%- endfor -%}
 

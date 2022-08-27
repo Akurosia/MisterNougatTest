@@ -128,6 +128,7 @@ bnpcname = loadDataTheQuickestWay("bnpcname_all.json", translate=True)
 eobjname = loadDataTheQuickestWay("eobjname_all.json", translate=True)
 status = loadDataTheQuickestWay("status_all.json", translate=True)
 enpcresident = loadDataTheQuickestWay("enpcresident_all.json", translate=True)
+enpcresidents = loadDataTheQuickestWay("Enpcresident.de.json")
 mounts = loadDataTheQuickestWay("mount_all.json", translate=True)
 minions = loadDataTheQuickestWay("companion_all.json", translate=True)
 orchestrions = loadDataTheQuickestWay("orchestrion_all.json", translate=True)
@@ -181,7 +182,27 @@ def clean_entries_from_single_quotes(entry):
             entry[key] = value[:-1]
     return entry
 
-#getlevel
+
+questss = loadDataTheQuickestWay("Quest.de.json", exd="raw-exd-all")
+different_pronouns = {'0': 'Der', '1': 'Die', '2': 'Das'}
+different_pronounss = {'0': 'er', '1': 'e', '2': 'es'}
+
+def make_name_readable(entry):
+    global different_articles
+    global different_pronouns
+    global different_adjective
+    name = entry["Singular"]
+    print(entry)
+    name = name.replace("[t]", different_pronouns[entry["Pronoun"]])
+    name = name.replace("[a]", different_pronounss[entry["Pronoun"]])
+    return name
+
+def getPropperQuestNPC(_id):
+    global questss
+    global enpcresidents
+    npc_id = questss[_id]['Issuer']['Start']
+    return make_name_readable(enpcresidents[npc_id])
+
 def workOnQuests(entry, quest_id):
     global quests
     if quest_id == "":
@@ -191,7 +212,12 @@ def workOnQuests(entry, quest_id):
         return entry
     quest = quests[quest_id]
     entry['quest'] = quest['Name'].replace(" ", "").replace(" ", "")
-    entry['quest_npc'] = quest['Issuer']['Start']
+    npc = quest['Issuer']['Start']
+    if "[a]" in npc or "[t]" in npc:
+        print_color_red(npc)
+        npc = getPropperQuestNPC(quest_id)
+        print_color_green(npc)
+    entry['quest_npc'] = npc
     try:
         level_data = getLevel(quest['Issuer']['Location'])
         entry['quest_location'] = f'{level_data["placename"]} ({level_data["x"]}, {level_data["y"]})'
