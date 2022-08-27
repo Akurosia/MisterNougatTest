@@ -5,7 +5,6 @@ import copy
 import os
 from operator import itemgetter
 import traceback
-# traceback.print_exc()
 import re
 import errno
 import openpyxl
@@ -14,9 +13,10 @@ from yaml.loader import SafeLoader
 import math
 import natsort
 from collections import OrderedDict
-#import convert_skills_to_guide_form as csgf
-#import generateLinks as gl
 import logging
+from openpyxl import load_workbook
+from io import BytesIO
+import requests
 
 import sys
 from ffxiv_aku import *
@@ -137,9 +137,14 @@ XLSXELEMENTS = ["exclude", "date", "sortid", "title", "categories", "slug", "ima
 UNKNOWNTITLE = {'de': 'Unbekannte Herkunft', 'en': 'Unknown Source', 'fr': 'Unknown Source', 'ja': 'Unknown Source', 'cn': 'Unknown Source', 'ko': 'Unknown Source'}
 
 
+def load_workbook_from_url(url):
+    file = requests.get(url)
+    return load_workbook(filename = BytesIO(file.content))
+
+
 def read_xlsx_file():
     # open file, get sheet, last row and last coulmn
-    wb = openpyxl.load_workbook('./guide_ffxiv.xlsx')
+    wb = load_workbook_from_url('https://raw.githubusercontent.com/Akurosia/DevFFXIVPocketGuide/master/guide_ffxiv.xlsx')
     sheet = wb['Tabelle1']
     max_row = sheet.max_row
     max_column = sheet.max_column
