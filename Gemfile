@@ -27,6 +27,5 @@ group :jekyll_plugins do
    gem "jekyll-include-cache"
    gem "jekyll-commonmark"
    gem 'jekyll-roman'
-   #gem "jekyll-admin"
 end
 gem "webrick", "~> 1.7"
