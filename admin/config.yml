@@ -103,9 +103,27 @@ guide-fields: &guide-fields
       - {label: "tank", name: "tank", required: false, widget: "string"}
       - {label: "melee", name: "melee", required: false, widget: "string"}
       - {label: "range", name: "range", required: false, widget: "string"}
-
+  - label: "loot"
+    name: "loot"
+    widget: "list"
+    fields:
+      - {label: "name", name: "name", required: false, widget: "string"}
+      - {label: "se_id", name: "se_id", required: false, widget: "string"}
+      - {label: "icon", name: "icon", required: false, widget: "string"}
+  - label: "phases"
+    name: "phases"
+    widget: "list"
+    fields:
+      - {label: "phase", name: "phase", required: false, widget: "string"}
+      - {label: "title", name: "title", required: false, widget: "string"}
+      - label: "notes"
+        name: "notes"
+        widget: "list"
+        fields:
+          - {label: "note", name: "note", required: false, widget: "string"}
   # Hidden fields
   - {label: "CMS Used", name: "cms", widget: "hidden", default: "netlify-cms"}
+
 
 collections:
   - name: "ew_new_dungeon"
@@ -198,7 +216,6 @@ collections:
     summary: "{{title.de}} ({{difficulty}}) -- {{year}}/{{month}}/{{day}}"
     fields:
       *guide-fields
-
 
   - name: "shb_new_dungeon"
     label: "Shadowbringers (Dunegon)"
