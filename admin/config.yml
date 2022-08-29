@@ -111,11 +111,454 @@ collections:
   - name: "ew_new_dungeon"
     label: "Endwalker (Dunegon)"
     delete: false
-    label_singular: "Endwalker (Dunegon) Guide"
+    label_singular: "Guide"
     folder: "_posts/ffxiv_content/ew_new/dungeon"
     create: true
     editor:
-      preview: True
+      preview: false
+    slug: "{{year}}-{{month}}-{{day}}--{{patchNumber}}--{{sortid}}--{{fields.slug}}"
+    summary: "{{title.de}} ({{difficulty}}) -- {{year}}/{{month}}/{{day}}"
+    fields:
+      *guide-fields
+
+  - name: "ew_new_raid"
+    label: "Endwalker (Raid)"
+    delete: false
+    label_singular: "Guide"
+    folder: "_posts/ffxiv_content/ew_new/raid"
+    create: true
+    editor:
+      preview: false
+    slug: "{{year}}-{{month}}-{{day}}--{{patchNumber}}--{{sortid}}--{{fields.slug}}"
+    summary: "{{title.de}} ({{difficulty}}) -- {{year}}/{{month}}/{{day}}"
+    fields:
+      *guide-fields
+
+  - name: "ew_new_trial"
+    label: "Endwalker (Trial)"
+    delete: false
+    label_singular: "Guide"
+    folder: "_posts/ffxiv_content/ew_new/trial"
+    create: true
+    editor:
+      preview: false
+    slug: "{{year}}-{{month}}-{{day}}--{{patchNumber}}--{{sortid}}--{{fields.slug}}"
+    summary: "{{title.de}} ({{difficulty}}) -- {{year}}/{{month}}/{{day}}"
+    fields:
+      *guide-fields
+
+  - name: "ew_new_allianzraid"
+    label: "Endwalker (AllianzRaid)"
+    delete: false
+    label_singular: "Guide"
+    folder: "_posts/ffxiv_content/ew_new/allianzraid"
+    create: true
+    editor:
+      preview: false
+    slug: "{{year}}-{{month}}-{{day}}--{{patchNumber}}--{{sortid}}--{{fields.slug}}"
+    summary: "{{title.de}} ({{difficulty}}) -- {{year}}/{{month}}/{{day}}"
+    fields:
+      *guide-fields
+
+  - name: "ew_new_treasure"
+    label: "Endwalker (Treasure)"
+    delete: false
+    label_singular: "Guide"
+    folder: "_posts/ffxiv_content/ew_new/treasure"
+    create: true
+    editor:
+      preview: false
+    slug: "{{year}}-{{month}}-{{day}}--{{patchNumber}}--{{sortid}}--{{fields.slug}}"
+    summary: "{{title.de}} ({{difficulty}}) -- {{year}}/{{month}}/{{day}}"
+    fields:
+      *guide-fields
+
+  - name: "ew_new_eureka"
+    label: "Endwalker (Eureka)"
+    delete: false
+    label_singular: "Guide"
+    folder: "_posts/ffxiv_content/ew_new/eureka"
+    create: true
+    editor:
+      preview: false
+    slug: "{{year}}-{{month}}-{{day}}--{{patchNumber}}--{{sortid}}--{{fields.slug}}"
+    summary: "{{title.de}} ({{difficulty}}) -- {{year}}/{{month}}/{{day}}"
+    fields:
+      *guide-fields
+
+  - name: "ew_new_pvp"
+    label: "Endwalker (PVP)"
+    delete: false
+    label_singular: "Guide"
+    folder: "_posts/ffxiv_content/ew_new/pvp"
+    create: true
+    editor:
+      preview: false
+    slug: "{{year}}-{{month}}-{{day}}--{{patchNumber}}--{{sortid}}--{{fields.slug}}"
+    summary: "{{title.de}} ({{difficulty}}) -- {{year}}/{{month}}/{{day}}"
+    fields:
+      *guide-fields
+
+
+  - name: "shb_new_dungeon"
+    label: "Shadowbringers (Dunegon)"
+    delete: false
+    label_singular: "Guide"
+    folder: "_posts/ffxiv_content/shb_new/dungeon"
+    create: true
+    editor:
+      preview: false
+    slug: "{{year}}-{{month}}-{{day}}--{{patchNumber}}--{{sortid}}--{{fields.slug}}"
+    summary: "{{title.de}} ({{difficulty}}) -- {{year}}/{{month}}/{{day}}"
+    fields:
+      *guide-fields
+
+  - name: "shb_new_raid"
+    label: "Shadowbringers (Raid)"
+    delete: false
+    label_singular: "Guide"
+    folder: "_posts/ffxiv_content/shb_new/raid"
+    create: true
+    editor:
+      preview: false
+    slug: "{{year}}-{{month}}-{{day}}--{{patchNumber}}--{{sortid}}--{{fields.slug}}"
+    summary: "{{title.de}} ({{difficulty}}) -- {{year}}/{{month}}/{{day}}"
+    fields:
+      *guide-fields
+
+  - name: "shb_new_trial"
+    label: "Shadowbringers (Trial)"
+    delete: false
+    label_singular: "Guide"
+    folder: "_posts/ffxiv_content/shb_new/trial"
+    create: true
+    editor:
+      preview: false
+    slug: "{{year}}-{{month}}-{{day}}--{{patchNumber}}--{{sortid}}--{{fields.slug}}"
+    summary: "{{title.de}} ({{difficulty}}) -- {{year}}/{{month}}/{{day}}"
+    fields:
+      *guide-fields
+
+  - name: "shb_new_allianzraid"
+    label: "Shadowbringers (AllianzRaid)"
+    delete: false
+    label_singular: "Guide"
+    folder: "_posts/ffxiv_content/shb_new/allianzraid"
+    create: true
+    editor:
+      preview: false
+    slug: "{{year}}-{{month}}-{{day}}--{{patchNumber}}--{{sortid}}--{{fields.slug}}"
+    summary: "{{title.de}} ({{difficulty}}) -- {{year}}/{{month}}/{{day}}"
+    fields:
+      *guide-fields
+
+  - name: "shb_new_treasure"
+    label: "Shadowbringers (Treasure)"
+    delete: false
+    label_singular: "Guide"
+    folder: "_posts/ffxiv_content/shb_new/treasure"
+    create: true
+    editor:
+      preview: false
+    slug: "{{year}}-{{month}}-{{day}}--{{patchNumber}}--{{sortid}}--{{fields.slug}}"
+    summary: "{{title.de}} ({{difficulty}}) -- {{year}}/{{month}}/{{day}}"
+    fields:
+      *guide-fields
+
+  - name: "shb_new_eureka"
+    label: "Shadowbringers (Eureka)"
+    delete: false
+    label_singular: "Guide"
+    folder: "_posts/ffxiv_content/shb_new/eureka"
+    create: true
+    editor:
+      preview: false
+    slug: "{{year}}-{{month}}-{{day}}--{{patchNumber}}--{{sortid}}--{{fields.slug}}"
+    summary: "{{title.de}} ({{difficulty}}) -- {{year}}/{{month}}/{{day}}"
+    fields:
+      *guide-fields
+
+  - name: "shb_new_pvp"
+    label: "Shadowbringers (PVP)"
+    delete: false
+    label_singular: "Guide"
+    folder: "_posts/ffxiv_content/shb_new/pvp"
+    create: true
+    editor:
+      preview: false
+    slug: "{{year}}-{{month}}-{{day}}--{{patchNumber}}--{{sortid}}--{{fields.slug}}"
+    summary: "{{title.de}} ({{difficulty}}) -- {{year}}/{{month}}/{{day}}"
+    fields:
+      *guide-fields
+
+  - name: "sb_new_dungeon"
+    label: "Stormblood (Dunegon)"
+    delete: false
+    label_singular: "Guide"
+    folder: "_posts/ffxiv_content/sb_new/dungeon"
+    create: true
+    editor:
+      preview: false
+    slug: "{{year}}-{{month}}-{{day}}--{{patchNumber}}--{{sortid}}--{{fields.slug}}"
+    summary: "{{title.de}} ({{difficulty}}) -- {{year}}/{{month}}/{{day}}"
+    fields:
+      *guide-fields
+
+  - name: "sb_new_raid"
+    label: "Stormblood (Raid)"
+    delete: false
+    label_singular: "Guide"
+    folder: "_posts/ffxiv_content/sb_new/raid"
+    create: true
+    editor:
+      preview: false
+    slug: "{{year}}-{{month}}-{{day}}--{{patchNumber}}--{{sortid}}--{{fields.slug}}"
+    summary: "{{title.de}} ({{difficulty}}) -- {{year}}/{{month}}/{{day}}"
+    fields:
+      *guide-fields
+
+  - name: "sb_new_trial"
+    label: "Stormblood (Trial)"
+    delete: false
+    label_singular: "Guide"
+    folder: "_posts/ffxiv_content/sb_new/trial"
+    create: true
+    editor:
+      preview: false
+    slug: "{{year}}-{{month}}-{{day}}--{{patchNumber}}--{{sortid}}--{{fields.slug}}"
+    summary: "{{title.de}} ({{difficulty}}) -- {{year}}/{{month}}/{{day}}"
+    fields:
+      *guide-fields
+
+  - name: "sb_new_allianzraid"
+    label: "Stormblood (AllianzRaid)"
+    delete: false
+    label_singular: "Guide"
+    folder: "_posts/ffxiv_content/sb_new/allianzraid"
+    create: true
+    editor:
+      preview: false
+    slug: "{{year}}-{{month}}-{{day}}--{{patchNumber}}--{{sortid}}--{{fields.slug}}"
+    summary: "{{title.de}} ({{difficulty}}) -- {{year}}/{{month}}/{{day}}"
+    fields:
+      *guide-fields
+
+  - name: "sb_new_treasure"
+    label: "Stormblood (Treasure)"
+    delete: false
+    label_singular: "Guide"
+    folder: "_posts/ffxiv_content/sb_new/treasure"
+    create: true
+    editor:
+      preview: false
+    slug: "{{year}}-{{month}}-{{day}}--{{patchNumber}}--{{sortid}}--{{fields.slug}}"
+    summary: "{{title.de}} ({{difficulty}}) -- {{year}}/{{month}}/{{day}}"
+    fields:
+      *guide-fields
+
+  - name: "sb_new_eureka"
+    label: "Stormblood (Eureka)"
+    delete: false
+    label_singular: "Guide"
+    folder: "_posts/ffxiv_content/sb_new/eureka"
+    create: true
+    editor:
+      preview: false
+    slug: "{{year}}-{{month}}-{{day}}--{{patchNumber}}--{{sortid}}--{{fields.slug}}"
+    summary: "{{title.de}} ({{difficulty}}) -- {{year}}/{{month}}/{{day}}"
+    fields:
+      *guide-fields
+
+  - name: "sb_new_pvp"
+    label: "Stormblood (PVP)"
+    delete: false
+    label_singular: "Guide"
+    folder: "_posts/ffxiv_content/sb_new/pvp"
+    create: true
+    editor:
+      preview: false
+    slug: "{{year}}-{{month}}-{{day}}--{{patchNumber}}--{{sortid}}--{{fields.slug}}"
+    summary: "{{title.de}} ({{difficulty}}) -- {{year}}/{{month}}/{{day}}"
+    fields:
+      *guide-fields
+
+  - name: "hw_new_dungeon"
+    label: "Heavensward (Dunegon)"
+    delete: false
+    label_singular: "Guide"
+    folder: "_posts/ffxiv_content/hw_new/dungeon"
+    create: true
+    editor:
+      preview: false
+    slug: "{{year}}-{{month}}-{{day}}--{{patchNumber}}--{{sortid}}--{{fields.slug}}"
+    summary: "{{title.de}} ({{difficulty}}) -- {{year}}/{{month}}/{{day}}"
+    fields:
+      *guide-fields
+
+  - name: "hw_new_raid"
+    label: "Heavensward (Raid)"
+    delete: false
+    label_singular: "Guide"
+    folder: "_posts/ffxiv_content/hw_new/raid"
+    create: true
+    editor:
+      preview: false
+    slug: "{{year}}-{{month}}-{{day}}--{{patchNumber}}--{{sortid}}--{{fields.slug}}"
+    summary: "{{title.de}} ({{difficulty}}) -- {{year}}/{{month}}/{{day}}"
+    fields:
+      *guide-fields
+
+  - name: "hw_new_trial"
+    label: "Heavensward (Trial)"
+    delete: false
+    label_singular: "Guide"
+    folder: "_posts/ffxiv_content/hw_new/trial"
+    create: true
+    editor:
+      preview: false
+    slug: "{{year}}-{{month}}-{{day}}--{{patchNumber}}--{{sortid}}--{{fields.slug}}"
+    summary: "{{title.de}} ({{difficulty}}) -- {{year}}/{{month}}/{{day}}"
+    fields:
+      *guide-fields
+
+  - name: "hw_new_allianzraid"
+    label: "Heavensward (AllianzRaid)"
+    delete: false
+    label_singular: "Guide"
+    folder: "_posts/ffxiv_content/hw_new/allianzraid"
+    create: true
+    editor:
+      preview: false
+    slug: "{{year}}-{{month}}-{{day}}--{{patchNumber}}--{{sortid}}--{{fields.slug}}"
+    summary: "{{title.de}} ({{difficulty}}) -- {{year}}/{{month}}/{{day}}"
+    fields:
+      *guide-fields
+
+  - name: "hw_new_treasure"
+    label: "Heavensward (Treasure)"
+    delete: false
+    label_singular: "Guide"
+    folder: "_posts/ffxiv_content/hw_new/treasure"
+    create: true
+    editor:
+      preview: false
+    slug: "{{year}}-{{month}}-{{day}}--{{patchNumber}}--{{sortid}}--{{fields.slug}}"
+    summary: "{{title.de}} ({{difficulty}}) -- {{year}}/{{month}}/{{day}}"
+    fields:
+      *guide-fields
+
+  - name: "hw_new_eureka"
+    label: "Heavensward (Eureka)"
+    delete: false
+    label_singular: "Guide"
+    folder: "_posts/ffxiv_content/hw_new/eureka"
+    create: true
+    editor:
+      preview: false
+    slug: "{{year}}-{{month}}-{{day}}--{{patchNumber}}--{{sortid}}--{{fields.slug}}"
+    summary: "{{title.de}} ({{difficulty}}) -- {{year}}/{{month}}/{{day}}"
+    fields:
+      *guide-fields
+
+  - name: "hw_new_pvp"
+    label: "Heavensward (PVP)"
+    delete: false
+    label_singular: "Guide"
+    folder: "_posts/ffxiv_content/hw_new/pvp"
+    create: true
+    editor:
+      preview: false
+    slug: "{{year}}-{{month}}-{{day}}--{{patchNumber}}--{{sortid}}--{{fields.slug}}"
+    summary: "{{title.de}} ({{difficulty}}) -- {{year}}/{{month}}/{{day}}"
+    fields:
+      *guide-fields
+
+  - name: "arr_new_dungeon"
+    label: "A Realm Reborn (Dunegon)"
+    delete: false
+    label_singular: "Guide"
+    folder: "_posts/ffxiv_content/arr_new/dungeon"
+    create: true
+    editor:
+      preview: false
+    slug: "{{year}}-{{month}}-{{day}}--{{patchNumber}}--{{sortid}}--{{fields.slug}}"
+    summary: "{{title.de}} ({{difficulty}}) -- {{year}}/{{month}}/{{day}}"
+    fields:
+      *guide-fields
+
+  - name: "arr_new_raid"
+    label: "A Realm Reborn (Raid)"
+    delete: false
+    label_singular: "Guide"
+    folder: "_posts/ffxiv_content/arr_new/raid"
+    create: true
+    editor:
+      preview: false
+    slug: "{{year}}-{{month}}-{{day}}--{{patchNumber}}--{{sortid}}--{{fields.slug}}"
+    summary: "{{title.de}} ({{difficulty}}) -- {{year}}/{{month}}/{{day}}"
+    fields:
+      *guide-fields
+
+  - name: "arr_new_trial"
+    label: "A Realm Reborn (Trial)"
+    delete: false
+    label_singular: "Guide"
+    folder: "_posts/ffxiv_content/arr_new/trial"
+    create: true
+    editor:
+      preview: false
+    slug: "{{year}}-{{month}}-{{day}}--{{patchNumber}}--{{sortid}}--{{fields.slug}}"
+    summary: "{{title.de}} ({{difficulty}}) -- {{year}}/{{month}}/{{day}}"
+    fields:
+      *guide-fields
+
+  - name: "arr_new_allianzraid"
+    label: "A Realm Reborn (AllianzRaid)"
+    delete: false
+    label_singular: "Guide"
+    folder: "_posts/ffxiv_content/arr_new/allianzraid"
+    create: true
+    editor:
+      preview: false
+    slug: "{{year}}-{{month}}-{{day}}--{{patchNumber}}--{{sortid}}--{{fields.slug}}"
+    summary: "{{title.de}} ({{difficulty}}) -- {{year}}/{{month}}/{{day}}"
+    fields:
+      *guide-fields
+
+  - name: "arr_new_treasure"
+    label: "A Realm Reborn (Treasure)"
+    delete: false
+    label_singular: "Guide"
+    folder: "_posts/ffxiv_content/arr_new/treasure"
+    create: true
+    editor:
+      preview: false
+    slug: "{{year}}-{{month}}-{{day}}--{{patchNumber}}--{{sortid}}--{{fields.slug}}"
+    summary: "{{title.de}} ({{difficulty}}) -- {{year}}/{{month}}/{{day}}"
+    fields:
+      *guide-fields
+
+  - name: "arr_new_eureka"
+    label: "A Realm Reborn (Eureka)"
+    delete: false
+    label_singular: "Guide"
+    folder: "_posts/ffxiv_content/arr_new/eureka"
+    create: true
+    editor:
+      preview: false
+    slug: "{{year}}-{{month}}-{{day}}--{{patchNumber}}--{{sortid}}--{{fields.slug}}"
+    summary: "{{title.de}} ({{difficulty}}) -- {{year}}/{{month}}/{{day}}"
+    fields:
+      *guide-fields
+
+  - name: "arr_new_pvp"
+    label: "A Realm Reborn (PVP)"
+    delete: false
+    label_singular: "Guide"
+    folder: "_posts/ffxiv_content/arr_new/pvp"
+    create: true
+    editor:
+      preview: false
     slug: "{{year}}-{{month}}-{{day}}--{{patchNumber}}--{{sortid}}--{{fields.slug}}"
     summary: "{{title.de}} ({{difficulty}}) -- {{year}}/{{month}}/{{day}}"
     fields:
