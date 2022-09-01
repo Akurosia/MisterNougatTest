@@ -144,8 +144,11 @@ def load_workbook_from_url(url):
 
 
 def read_xlsx_file():
-    # open file, get sheet, last row and last coulmn
-    wb = load_workbook_from_url('https://raw.githubusercontent.com/Akurosia/DevFFXIVPocketGuide/master/guide_ffxiv.xlsx')
+    KEY = os.environ.get("GDRIVE_APIKEY")
+    MIME_TYPE = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    SHEET = "11SBQWYyFnyh19Ku6T1Wr5tNAJvxdze8tvD6m4bzPGIA"
+    r = f"https://www.googleapis.com/drive/v3/files/{SHEET}/export?key={KEY}&mimeType={MIME_TYPE}"
+    wb = load_workbook_from_url(r)
     sheet = wb['Tabelle1']
     max_row = sheet.max_row
     max_column = sheet.max_column
