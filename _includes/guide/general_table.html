@@ -1,0 +1,62 @@
+
+<div class="u-container-style u-layout-cell u-shape-rectangle u-size-15 u-layout-cell-2">
+  <div class="u-container-layout u-container-layout-8">
+    <h1 class="u-text u-text-default u-title u-text-4">&nbsp;Allgemeines</h1>
+    <div class="u-table u-table-responsive u-table-1">
+      <table class="u-table-entity">
+        <colgroup>
+          <col width="49.9%"/>
+          <col width="50.1%"/>
+        </colgroup>
+        <tbody class="u-table-alt-palette-1-light-3 u-table-body">
+          <tr style="height: 27px;">
+            <td class="u-table-cell u-table-cell-1">Player-Lvl</td>
+            <td class="u-table-cell">{{page.plvl}}</td>
+          </tr>
+          <tr style="height: 63px;">
+            <td class="u-custom-color-3 u-table-cell u-table-cell-3">Item Lvl</td>
+            <td class="u-custom-color-3 u-table-cell u-table-cell-4">{{page.ilvl}}</td>
+          </tr>
+          <tr style="height: 27px;">
+            <td class="u-table-cell u-table-cell-5">Quest</td>
+            <td class="u-table-cell">
+              <a href="https://de.finalfantasyxiv.com/lodestone/playguide/db/quest/{{page.quest_se_id}}/" class="eorzeadb_link u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-black u-text-hover-white u-btn-1" target="_blank">{{page.quest}}</a>
+            </td>
+          </tr>
+          <tr style="height: 63px;">
+            <td class="u-custom-color-3 u-table-cell u-table-cell-7">Quest NPC</td>
+            <td class="u-custom-color-3 u-table-cell u-table-cell-8">{{page.quest_npc}}</td>
+          </tr>
+          <tr style="height: 63px;">
+            <td class="u-table-cell u-table-cell-9">Quest Location</td>
+            <td class="u-table-cell">{{page.quest_location}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <h1 class="u-text u-text-default u-title u-text-5">&nbsp;Loot</h1>
+    <div class="u-table u-table-responsive u-table-2">
+      <table class="u-table-entity">
+        <colgroup>
+          <col width="7%"/>
+          <col width="93%"/>
+        </colgroup>
+        <tbody class="u-table-alt-palette-1-light-3 u-table-body">
+          {%- for loot in page.loot -%}
+            {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+            <tr style="height: 65px;">
+              <td class="{% if thecycle == 'even' %}u-custom-color-3{% endif %} u-table-cell">
+                <span href="https://de.finalfantasyxiv.com/lodestone/playguide/db/item/{{loot.se_id}}/" class="eorzeadb_link u-file-icon u-icon u-icon-7">
+                  <img src="{{loot.icon | prepend: site.imageurl }}" alt=""/>
+                </span>
+              </td>
+              <td class="{% if thecycle == 'even' %}u-custom-color-3{% endif %} u-table-cell">
+                <a href="https://de.finalfantasyxiv.com/lodestone/playguide/db/item/{{loot.se_id}}/" target="_blank" class="eorzeadb_link db_popup u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-white u-btn-2">{{loot.name}}</a>
+              </td>
+            </tr>
+          {%- endfor -%}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,55 @@
+<header class="u-align-center-xs u-border-1 u-border-grey-25 u-header" id="sec-8872">
+  <div class="u-section-row">
+    <div class="u-sheet">
+      <a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="80" data-image-height="40">
+        <img src="{{ '/assets/images/default-logo.png' | prepend: site.baseurl }}" class="u-logo-image u-logo-image-1"/>
+      </a>
+      <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
+        <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px; font-weight: 700;">
+          <a class="u-button-style u-nav-link" href="#" style="padding: 4px 0px; font-size: calc(1em + 8px);">
+            <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 302 302" style="">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-7b92"></use>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg-7b92" x="0px" y="0px" viewBox="0 0 302 302" style="enable-background:new 0 0 302 302;" xml:space="preserve" class="u-svg-content">
+              <g>
+                <rect y="36" width="302" height="30"></rect>
+                <rect y="236" width="302" height="30"></rect>
+                <rect y="136" width="302" height="30"></rect>
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div class="u-custom-menu u-nav-container">
+          <ul class="u-nav u-unstyled u-nav-1">
+            <li class="u-nav-item">
+              <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{{ '/' | prepend: site.baseurl }}" style="padding: 10px 20px;">Startseite</a>
+            </li>
+            <li class="u-nav-item">
+              <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{{ '/raids/' | prepend: site.baseurl }}" style="padding: 10px 20px;">Raids</a>
+              <div class="u-nav-popup">
+                <ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-2">
+                  {%- for post in site.categories.expansions -%}
+                    {%- for expac in post.expansions -%}
+                      <li class="u-nav-item">
+                        <a class="u-button-style u-nav-link u-white">{{ expac.name }}</a>
+                      </li>
+                    {%- endfor -%}
+                  {%- endfor -%}
+                </ul>
+              </div>
+            </li>
+            <li class="u-nav-item">
+              <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{{ '/team/' | prepend: site.baseurl }}" style="padding: 10px 20px;">Team</a>
+            </li>
+            <li class="u-nav-item">
+              <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{{ '/blog/' | prepend: site.baseurl }}" style="padding: 10px 20px;">Blog</a>
+            </li>
+            <li class="u-nav-item">
+              <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{{ '/kontakt/' | prepend: site.baseurl }}" style="padding: 10px 20px;">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
