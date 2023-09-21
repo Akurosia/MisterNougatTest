@@ -1,0 +1,11 @@
+
+            <nav class="header">
+                <img class="logo" src="/favicon.png" height="40" class="d-inline-block align-top" alt=""/>
+                <a href="/index.html" class="logo-text">MC.MISTERNOUGAT.DE</a>
+                {%- if category == "startseite" -%}
+                {%- else -%}
+                    <a href="/regeln" class="logo-text">REGELN</a>
+                    <a href="/faq" class="logo-text">FAQ</a>
+                    <a href="/commands" class="logo-text" style="display: none;" id="commandlist">Commands</a>
+                {%- endif -%}
+            </nav>

@@ -1,0 +1,35 @@
+
+        <main>
+            <space></space>
+            <content class="main">
+                <span class="title">FAQ</span>
+
+                <!--
+                <div class="search">
+                    <form class="search__form">
+                        <input id="search" placeholder="Suchen" type="text">
+                    </form>
+                </div>
+                -->
+                <div class="accordion w-100 " id="basicAccordion">
+                    {%- for faq in page.faqs -%}
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading{{faq.unique}}">
+                                <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#basicAccordionCollapse{{faq.unique}}" aria-expanded="false" aria-controls="collapse{{faq.unique}}">
+                                    {{ faq.button_title }}
+                                </button>
+                            </h2>
+                            <div id="basicAccordionCollapse{{faq.unique}}" class="accordion-collapse collapse" aria-labelledby="heading{{faq.unique}}" data-mdb-parent="#basicAccordion" style="">
+                                <div class="accordion-body">
+                                    {%- for reihe in faq.rows -%}
+                                        {{ reihe }}
+                                    {%- endfor -%}
+                                </div>
+                            </div>
+                        </div>
+                    {%- endfor -%}
+                </div>
+
+            </content>
+            <space></space>
+        </main>
