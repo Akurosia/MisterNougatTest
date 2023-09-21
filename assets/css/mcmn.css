@@ -16,8 +16,8 @@
     --more-dark: rgb(20,23,10,0.8);
   }
 
-@font-face { font-family: antihero; src: url('https://github.com/Akurosia/MisterNougatTest/raw/jekyll/assets/fonts/Antihero.ttf'); }
-@font-face { font-family: eeb; src: url('https://github.com/Akurosia/MisterNougatTest/raw/jekyll/assets/fonts/Elgethy Est Bold.ttf'); }
+@font-face { font-family: antihero; src: url('https://akurosia.github.io/MisterNougatTest/assets/fonts/Antihero.ttf'); }
+@font-face { font-family: eeb; src: url('https://akurosia.github.io/MisterNougatTest/assets/fonts/Elgethy Est Bold.ttf'); }
 
 a {
     all: unset;
