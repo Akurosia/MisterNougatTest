@@ -20,8 +20,10 @@ description: > # this means to ignore newlines until "baseurl:"
 encoding: utf-8
 repository: akurosia/MisterNougatTest
 imageurl: "https://ffxiv.akurosia.de/extras/images/ui/icon"
-baseurl: ""
 github_username:  akurosia
+baseurl: "/MisterNougatTest"
+
+
 # Build settings
 #markdown: kramdown
 markdown: CommonMark
