@@ -32,6 +32,10 @@ html, head, body {
 body {
     background: var(--green-light);
     background: linear-gradient(56deg, var(--green-light) 0%, var(--green-dark) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center top;
+    background-attachment: fixed;
 }
 
 nav {
@@ -61,6 +65,13 @@ nav {
   min-height: 100%;
 }
 
+.dots {
+    background-image: url(/assets/images/punkte.png);
+    background-repeat: repeat-x repeat-<;
+    background-attachment: fixed;
+
+}
+
 .start {
     display: flex;
     justify-content: center;
@@ -84,6 +95,7 @@ main {
     min-height: 80%;
     margin-top: 20px;
     margin-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 .title {
@@ -97,9 +109,10 @@ main {
     font-size: clamp(3rem, 10vw, 10rem);
 }
 
-#search {
+#guideFilter {
     width: 80%;
     border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 .accordion {

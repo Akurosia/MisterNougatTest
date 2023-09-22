@@ -1,26 +1,28 @@
 
         <main>
-            <space></space>
+            <space class="dots"></space>
             <content class="main">
                 <span class="title">Commands</span>
-
                 <!--
                 <div class="search">
                     <form class="search__form">
-                        <input id="search" placeholder="Suchen" type="text">
+                        <input id="guideFilter" placeholder="Filtern" type="text">
                     </form>
                 </div>
                 -->
                 <div class="accordion w-100 " id="basicAccordion">
                     {%- for command in page.commands -%}
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="heading{{command.unique}}">
-                                <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#basicAccordionCollapse{{command.unique}}" aria-expanded="false" aria-controls="collapse{{command.unique}}">
+                        <div class="accordion-item" data-terms="{%- for term in command.terms -%}{{ term }}&#32;{%- endfor -%}">
+                            <h2 class="accordion-header" id="heading{{forloop.index0}}">
+                                <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#basicAccordionCollapse{{forloop.index0}}" aria-expanded="false" aria-controls="collapse{{forloop.index0}}">
                                     {{ command.button_title }}
                                 </button>
                             </h2>
-                            <div id="basicAccordionCollapse{{command.unique}}" class="accordion-collapse collapse" aria-labelledby="heading{{command.unique}}" data-mdb-parent="#basicAccordion" style="">
+                            <div id="basicAccordionCollapse{{forloop.index0}}" class="accordion-collapse collapse" aria-labelledby="heading{{forloop.index0}}" data-mdb-parent="#basicAccordion" style="">
                                 <div class="accordion-body">
+                                    {%- if command.img -%}
+                                        <img src="{{ command.img | prepend: '/assets/images/' | prepend: site.baseurl }}" width="90%"></img><br/><br/>
+                                    {%- endif -%}
                                     {%- for reihe in command.rows -%}
                                         {{ reihe }}
                                     {%- endfor -%}
@@ -29,7 +31,6 @@
                         </div>
                     {%- endfor -%}
                 </div>
-
             </content>
             <space></space>
         </main>
