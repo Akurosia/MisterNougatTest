@@ -16,8 +16,8 @@ a {
 //}
 
 body {
-    @font-face { font-family: antihero; src: url('https://nougatcrew.github.io/MC_MisterNougat/assets/fonts/Antihero.ttf'); }
-    @font-face { font-family: eeb; src: url('https://nougatcrew.github.io/MC_MisterNougat/assets/fonts/Elgethy Est Bold.ttf'); }
+    @font-face { font-family: antihero; src: url('https://raw.githubusercontent.com/Nougatcrew/MC_MisterNougat/jekyll/assets/fonts/Antihero.ttf'); }
+    @font-face { font-family: eeb; src: url('https://raw.githubusercontent.com/Nougatcrew/MC_MisterNougat/jekyll/assets/fonts/Elgethy Est Bold.ttf'); }
 
     background: var($color-green-light);
     background: linear-gradient(56deg, $color-green-light 0%, $color-green-dark 100%);
