@@ -81,8 +81,9 @@ body {
                   display: none;
                 }
             }
-            .dots {
-                background-image: url(/assets/images/punkte.png);
+            &.dots {
+                background-image: url('/MC_MisterNougat/assets/images/punkte.png');
+                background-image: url('/assets/images/punkte.png');
                 background-repeat: repeat-x repeat-y;
                 background-attachment: fixed;
 
