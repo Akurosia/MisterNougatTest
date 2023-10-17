@@ -29,7 +29,7 @@ document.addEventListener('keydown', function(e) {
 
     // if the last key is reached, activate cheats
     if (konamiCodePosition == konamiCode.length) {
-      activateCheats();
+      toogleKonami();
       konamiCodePosition = 0;
     }
   } else {
@@ -37,12 +37,17 @@ document.addEventListener('keydown', function(e) {
   }
 });
 
-function activateCheats() {
-  //document.body.style.backgroundImage = "url('images/cheatBackground.png')";
-  document.getElementById("commandlist").style.display = "";
-  localStorage.setItem('konami_cookie', true)
+function toogleKonami() {
+  if (localStorage.getItem('konami_cookie') === "true") {
+    localStorage.setItem('konami_cookie', false)
+    document.getElementById("commandlist").style.display = "none";
+  } else {
+    //document.body.style.backgroundImage = "url('images/cheatBackground.png')";
+    document.getElementById("commandlist").style.display = "";
+    localStorage.setItem('konami_cookie', true)
+  }
 }
 
-if (localStorage.getItem('konami_cookie')) {
+if (localStorage.getItem('konami_cookie') === "true") {
   document.getElementById("commandlist").style.display = "";
 }

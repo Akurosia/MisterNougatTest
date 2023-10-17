@@ -1,0 +1,64 @@
+// =============================================================================
+
+    // color Styles
+
+// =============================================================================
+
+// Greyscale
+
+    $color--white: #FFFFFF;
+    $color--black: #1E1E1E;
+
+    $color--night: #000000;
+
+// Font Colours
+
+    $font-white: rgba($color--white, .85);
+    $font-black: rgba($color--black, .85);
+
+// Brand Colours
+
+    $color--red: #FF575C;
+    $color--orange: #F48A20;
+    $color--green: #52E96C;
+    $color--yellow: #FEC34E;
+    $color--blue: #36B8EA;
+    $color--purple: #9B40BF;
+    $color--grey: #95989A;
+
+// Component Colours
+
+    $color--shadow: rgba($color--night, .5);
+    $color--overlay: rgba($color--night, .7);
+    $color--border: #95989A;
+    $color--accordion-1: $color--black;
+    $color--accordion-2: #282828;
+    $color--accordion-3: #323232;
+
+// Custom Pallets
+    $color-aku-link-color: #FF575C;
+    $color-aku-link-color-hover: rgba(30,30,30,.85);
+    $color-aku-greyText: rgba(202, 199, 195, 0.85);
+    $color-aku-verydarkBG: rgb(23, 25, 25);
+    $color-aku-notsoverydarkBG: #212121;
+    $color-aku-notsodarkBG: #282828;
+    $color-aku-slightdarkBG: rgb(30, 32, 33);
+    $color-aku-normaldarkBG: darken($color--white, 80%);
+
+// nougat colors
+//
+    $color-green-dark: #2E6B17;
+    $color-green-normal: #37A700;
+    $color-green-neon: #10D401;
+    $color-green-light: #76ea66;
+    $color-purple-dark: #360842;
+    $color-purple-normal: #5F1679;
+    $color-purple-neon: #7448A2;
+    $color-purple-light: #C978EF;
+    $color-pink-dark: #640340;
+    $color-pink-normal: #CC058E;
+    $color-pink-neon: #FF0094;
+    $color-pink-light: #FD80B6;
+    $color-slight-dark: rgb(0, 0, 0, 0.2);
+    $color-slighty-more-dark: rgb(0, 0, 0, 0.4);
+    $color-more-dark: rgb(20,23,10,0.8);

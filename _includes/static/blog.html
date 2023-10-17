@@ -1,0 +1,12 @@
+        <main>
+            <space class="dots"></space>
+            <content class="main">
+                <span class="title">Changelog</span>
+                <div class="accordion w-100 " id="basicAccordion">
+                    {%- for faq in page.faqs -%}
+                        {%- include components/get_changelog_entries.html -%}
+                    {%- endfor -%}
+                </div>
+            </content>
+            <space class="dots"></space>
+        </main>

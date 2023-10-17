@@ -1,0 +1,12 @@
+        <main>
+            <space class="dots"></space>
+            <content class="main">
+                <span class="title">Changelog</span>
+                <div id="changelog-container" class="accordion">
+                    {% for post in site.posts | reversed %}
+                        {%- include components/changelog/get_entries.html -%}
+                    {% endfor %}
+                </div>
+            </content>
+            <space class="dots"></space>
+        </main>

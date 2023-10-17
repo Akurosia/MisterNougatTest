@@ -1,0 +1,31 @@
+                        <div class="accordion-item changelog-item" data-terms="{%- for term in faq.terms -%}{{ term }}&#32;{%- endfor -%}">
+                            <h2 class="accordion-header" id="heading{{forloop.index0}}">
+                                <div class="accordion-button changelog-button" aria-expanded="false">
+                                    {{ post.title }}
+                                </div>
+
+                            </h2>
+                            <div id="basicAccordionCollapse{{forloop.index0}}" aria-labelledby="heading{{forloop.index0}}" data-mdb-parent="#basicAccordion" style="">
+                                <div class="accordion-body">
+                                    <span class="changelog-date">{{post.date | date: "%-d %B %Y"}}</span><br/><br/>
+                                    {% for preintro in post.pre-intro %}
+                                        {{ preintro }}<br/>
+                                    {% endfor %}
+
+                                    {% for categorie in post.updates %}
+                                        <hr/>
+                                        {{ categorie.subtitle }}:<br/>
+                                        <div class="changelog-entrie-list">
+                                            {% for update in categorie.text %}
+                                                • {{ update }}<br/>
+                                            {% endfor %}
+                                        </div>
+                                    {% endfor %}
+                                    <hr/>
+
+                                    {% for postintro in post.post-intro %}
+                                        {{ postintro }}<br/>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>

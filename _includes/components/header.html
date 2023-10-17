@@ -1,11 +1,20 @@
 
             <nav class="header">
-                <img class="logo" src="{{ '/favicon.png' | prepend: site.baseurl }}" height="40" class="d-inline-block align-top" alt=""/>
-                <a href="/index.html" class="logo-text">MC.MISTERNOUGAT.DE</a>
-                {%- if category == "startseite" -%}
-                {%- else -%}
-                    <a href="{{ '/regeln/index.html' | prepend: site.baseurl }}" class="logo-text">REGELN</a>
-                    <a href="{{ '/faq/index.html' | prepend: site.baseurl }}" class="logo-text">FAQ</a>
-                    <a href="{{ '/commands/index.html' | prepend: site.baseurl }}" class="logo-text" style="display: none;" id="commandlist">Commands</a>
-                {%- endif -%}
+                <space></space>
+                <div class="nav-container">
+                    <a class="logo" href="{{ '/index.html' | prepend: site.baseurl }}"><img class="logo" src="{{ '/favicon.png' | prepend: site.baseurl }}" alt=""/></a>
+                    {%- if category == "startseite" -%}
+                    {%- else -%}
+                        <div>
+                            </span><a class="logo-text" href="{{ '/regeln/index.html' | prepend: site.baseurl }}" >REGELN</a>
+                            <span class="logo-text">|</span><a class="logo-text" href="{{ '/faq/index.html' | prepend: site.baseurl }}" >FAQ</a>
+                            <span class="logo-text">|</span><a class="logo-text" href="{{ '/changelog/index.html' | prepend: site.baseurl }}" >Changelog</a>
+                            <span style="display: none;" id="commandlist">
+                                <span class="logo-text">|</span>
+                                <a class="logo-text" href="{{ '/commands/index.html' | prepend: site.baseurl }}">Commands</a>
+                            </span>
+                        </div>
+                    {%- endif -%}
+                </div>
+                <space></space>
             </nav>
