@@ -13,15 +13,15 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MisterNougatTest
+title: MC_MisterNougat
 email: akurosia@akurosia.de
 description: > # this means to ignore newlines until "baseurl:"
   A page for Mister_Nougat_TTV
 encoding: utf-8
-repository: akurosia/MisterNougatTest
+repository: nougatcrew/MC_MisterNougat
 imageurl: "https://ffxiv.akurosia.de/extras/images/ui/icon"
 github_username:  akurosia
-baseurl: "/MisterNougatTest"
+baseurl: "/MC_MisterNougat"
 
 
 # Build settings
